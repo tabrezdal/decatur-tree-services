@@ -116,9 +116,9 @@
   }
 
   .logo-img {
-    max-width: 180px;
-    height: auto;
-    filter: invert(1);
+      max-width: 180px;
+      height: auto;
+      filter: invert(1);
   }
 
   .nav-links {
@@ -172,11 +172,11 @@
   }
 
   .hero-img {
-    min-width: auto;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: -35%;
+      min-width: auto;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: -35%;
   }
 
   .hero-rings {
@@ -489,7 +489,7 @@
       position: relative;
   }
 
-  .about-visual-photo{
+  .about-visual-photo {
       height: 100%;
       position: absolute;
       top: 0;
@@ -761,9 +761,9 @@
       overflow: hidden;
   }
 
-  .spotlight-visual-img{
-    width: auto;
-    height: 100%;
+  .spotlight-visual-img {
+      width: auto;
+      height: 100%;
   }
 
   .spotlight:nth-child(even) .spotlight-visual {
@@ -791,7 +791,7 @@
   .spotlight-bg-3 {
       background: linear-gradient(135deg, #0d1f15 0%, #163525 100%);
   }
-  
+
   .spotlight-content {
       padding: 3.5rem;
       display: flex;
