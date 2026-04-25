@@ -325,7 +325,7 @@
 
   /* Even rows — reset the order override */
   .spotlight:nth-child(even) .spotlight-visual {
-    order: unset;
+    order: unset !important;
   }
 
   .spotlight-visual {
