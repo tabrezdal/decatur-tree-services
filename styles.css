@@ -118,7 +118,6 @@
   .logo-img {
       max-width: 180px;
       height: auto;
-      filter: invert(1);
   }
 
   .nav-links {
@@ -1165,19 +1164,19 @@
   }
 
   .team-member-1 {
-      background-image: url('./assets/team-photos/Michel\ Decatur.webp');
+      background-image: url('./assets/team-photos/EthanWalker.webp');
   }
 
   .team-member-2 {
-      background-image: url('./assets/team-photos/Leon\ Decatur.webp');
+      background-image: url('./assets/team-photos/RyanWalker.webp');
   }
 
   .team-member-3 {
-      background-image: url('./assets/team-photos/Shawn\ DeWilt.webp');
+      background-image: url('./assets/team-photos/AustinParker.webp');
   }
 
   .team-member-4 {
-      background-image: url('./assets/team-photos/Sharica\ Clement.webp');
+      background-image: url('./assets/team-photos/JessicaCarter.webp');
   }
 
   .team-initials {
