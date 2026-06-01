@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -6,9 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tree Service Company | Expert Arborists in Houma, LA</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@600;700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="responsive.css">
 </head>
@@ -35,7 +33,7 @@
         <li><a href="#reviews">Reviews</a></li>
         <li><a href="#faq">FAQ</a></li>
         <li><a href="#contact" class="nav-cta">Free Quote</a></li>
-        <li><a href="tel:1234567890" class="nav-tel">(123) 456-7890</a></li>
+        <li><a data-phone-link class="nav-tel" href="tel:1234567890" data-phone>(123) 456-7890</a></li>
       </ul>
     </div>
   </nav>
@@ -44,39 +42,36 @@
   <section class="hero" aria-labelledby="hero-heading">
 
     <div class="hero-content">
-      <div class="hero-badge">ISA Certified Arborists · Fully Insured · Since 2012</div>
-      <h1 id="hero-heading">
-        Rooted in Quality.<br>
-        <em>Grown in Houma.</em>
+      <div id="hero-badge" class="hero-badge">ISA Certified Arborists · Fully Insured · Since 2012</div>
+      <h1 id="hero-heading" class="hero-heading">
+        <span id="hero-title">Rooted in Quality.</span>
       </h1>
-      <p class="hero-sub">Family-owned and operated since 2012, we provide professional arboriculture services you can
-        trust. Whether you need land clearing or precision pruning, the Walker brothers treat your landscape exactly
-        like it is their own.</p>
+      <p id="hero-subtitle" class="hero-sub">Family-owned and operated since 2012, we provide professional arboriculture services you can trust. Whether you need land clearing or precision pruning, the Decatur brothers treat your landscape exactly like it is their own.</p>
       <div class="hero-actions">
         <a href="#contact" class="btn-primary">Get a Free Quote</a>
-        <a href="tel:1234567890" class="btn-outline">Call (123) 456-7890</a>
+        <a data-phone-link class="btn-outline" href="tel:1234567890"><span data-phone>(123) 456-7890</span></a>
       </div>
       <div class="hero-stats" aria-label="Company highlights">
         <div class="hero-stat">
-          <strong>4.9 ★</strong>
+          <strong id="stat-rating">4.9 ★</strong>
           <span>Google Rating</span>
         </div>
         <div class="hero-stat">
-          <strong>44+</strong>
+          <strong id="stat-reviews">44+</strong>
           <span>5-Star Reviews</span>
         </div>
         <div class="hero-stat">
-          <strong>12+</strong>
+          <strong id="stat-experience">12+</strong>
           <span>Years Serving Houma</span>
         </div>
         <div class="hero-stat">
-          <strong>24/7</strong>
+          <strong id="stat-emergency">24/7</strong>
           <span>Storm Response</span>
         </div>
       </div>
     </div>
 
-    <img src="assets/hero-img/hero-img.png" alt="hero image" class="hero-img" />
+    <img id="hero-img" src="assets/hero-img/hero-img.png" alt="hero image" class="hero-img" />
     <div class="hero-rings" aria-hidden="true">
       <div class="hero-ring"></div>
       <div class="hero-ring"></div>
@@ -91,8 +86,7 @@
       <div class="trust-item">
         <div class="trust-icon" aria-hidden="true">
           <svg viewBox="0 0 16 16">
-            <path d="M8 1L10 6H15L11 9.5L12.5 15L8 11.5L3.5 15L5 9.5L1 6H6Z" stroke-width="1.4"
-              stroke-linejoin="round" />
+            <path d="M8 1L10 6H15L11 9.5L12.5 15L8 11.5L3.5 15L5 9.5L1 6H6Z" stroke-width="1.4" stroke-linejoin="round" />
           </svg>
         </div>
         <span><strong>ISA Certified</strong> Arborists</span>
@@ -100,8 +94,7 @@
       <div class="trust-item">
         <div class="trust-icon" aria-hidden="true">
           <svg viewBox="0 0 16 16">
-            <path d="M8 1.5L2 4.5V9C2 12.5 5 14.5 8 15.5C11 14.5 14 12.5 14 9V4.5L8 1.5Z" stroke-width="1.4"
-              stroke-linejoin="round" />
+            <path d="M8 1.5L2 4.5V9C2 12.5 5 14.5 8 15.5C11 14.5 14 12.5 14 9V4.5L8 1.5Z" stroke-width="1.4" stroke-linejoin="round" />
           </svg>
         </div>
         <span><strong>Fully Licensed</strong> &amp; Insured</span>
@@ -140,15 +133,10 @@
     <div class="about-inner">
       <div class="about-text">
         <span class="section-label">About the Company</span>
-        <h2 class="section-title" id="about-heading">Serving Houma with Pride and Professional Care</h2>
-        <p>Tree Service Company is more than just a local business — <strong>we are a family legacy rooted deeply in
-            the soil of Houma.</strong> Since 2012, Michel and Leon have built a reputation based on unshakeable
-          reliability and expert craftsmanship.</p>
-        <p>We understand that your trees are valuable assets to your property, which is why we approach every project —
-          from simple trimming to complex crane removals — with the highest level of safety standards and respect for
-          your landscape.</p>
-        <p>Born from a desire to help neighbors recover after storms, we have grown into the region's most trusted
-          arborists, treating every property with the same care and respect as our own family home.</p>
+        <h2 class="section-title" id="about-title">Serving Houma with Pride and Professional Care</h2>
+        <p id="about-description-1">Decatur Tree Services is more than just a local business — we are a family legacy rooted deeply in the soil of Houma.</p>
+        <p id="about-description-2">We understand that your trees are valuable assets to your property, which is why we approach every project with the highest level of safety standards and respect for your landscape.</p>
+        <p>Born from a desire to help neighbors recover after storms, we have grown into the region's most trusted arborists, treating every property with the same care and respect as our own family home.</p>
         <div class="about-badges">
           <span class="badge">
             <svg viewBox="0 0 13 13">
@@ -158,8 +146,7 @@
           </span>
           <span class="badge">
             <svg viewBox="0 0 13 13">
-              <path d="M6.5 1.5L2 3.5V7.5C2 10 4 11.5 6.5 12.5C9 11.5 11 10 11 7.5V3.5L6.5 1.5Z" stroke-linejoin="round"
-                stroke-width="1.2" />
+              <path d="M6.5 1.5L2 3.5V7.5C2 10 4 11.5 6.5 12.5C9 11.5 11 10 11 7.5V3.5L6.5 1.5Z" stroke-linejoin="round" stroke-width="1.2" />
             </svg>
             Fully Insured
           </span>
@@ -188,18 +175,17 @@
       <div class="about-visual" aria-hidden="true">
         <div class="about-image-frame">
           <div class="about-image-bg">
-            <img src="assets/jobsite-photos/Jobsite5.webp" alt="jobsite photo" class="about-visual-photo" />
+            <img id="about-img" src="assets/jobsite-photos/Jobsite5.webp" alt="jobsite photo" class="about-visual-photo" />
           </div>
           <div class="about-image-pattern"></div>
           <div class="about-image-text">
-            <strong>Ryan &amp; Ethan<br>Walker</strong>
-            "The expert tree care Houma trusts. We handle removal, trimming, and stumps with precision. Fast, safe, and
-            fully insured."
+            <strong id="about-owners">Ryan &amp; Ethan<br>Walker</strong>
+            <span id="about-quote">The expert tree care Houma trusts. We handle removal, trimming, and stumps with precision. Fast, safe, and fully insured.</span>
           </div>
         </div>
         <div class="about-accent-card" aria-label="4.9 star rating on Google and Facebook">
-          <strong>4.9 ★</strong>
-          <span>44 Reviews on Google &amp; Facebook</span>
+          <strong id="stat-rating-copy">4.9 ★</strong>
+          <span id="stat-reviews-copy">44 Reviews on Google &amp; Facebook</span>
         </div>
       </div>
     </div>
@@ -214,102 +200,7 @@
       </div>
       <a href="#contact" class="btn-primary" style="flex-shrink:0;">Request a Quote</a>
     </div>
-    <div class="services-grid" role="list">
-
-      <article class="service-card" role="listitem">
-        <div class="service-num">01</div>
-        <div class="service-icon" aria-hidden="true">
-          <svg viewBox="0 0 22 22">
-            <path d="M11 3L6 8H8L5 13H9V19H13V13H17L14 8H16L11 3Z" stroke-linejoin="round" />
-            <path d="M7 19H15" stroke-linecap="round" />
-          </svg>
-        </div>
-        <h3 class="service-title">Tree Removal</h3>
-        <p class="service-text">Safely remove dangerous or unwanted trees with precision rigging and crane techniques —
-          no damage to your landscape, guaranteed clean results.</p>
-        <a href="#contact" class="service-link">Get a Quote</a>
-      </article>
-
-      <article class="service-card" role="listitem">
-        <div class="service-num">02</div>
-        <div class="service-icon" aria-hidden="true">
-          <svg viewBox="0 0 22 22">
-            <path d="M11 3 Q15 8 13 14" stroke-linecap="round" />
-            <path d="M11 3 Q7 8 9 14" stroke-linecap="round" />
-            <path d="M9 14 Q11 16 13 14" stroke-linecap="round" />
-            <path d="M11 16V20" stroke-linecap="round" stroke-width="2" />
-            <path d="M4 10 L8 12" stroke-linecap="round" />
-            <path d="M18 10 L14 12" stroke-linecap="round" />
-          </svg>
-        </div>
-        <h3 class="service-title">Trimming &amp; Pruning</h3>
-        <p class="service-text">Expert deadwood removal and structural shaping to promote healthy growth, improve canopy
-          structure, and protect your roof from overhanging limbs.</p>
-        <a href="#contact" class="service-link">Get a Quote</a>
-      </article>
-
-      <article class="service-card" role="listitem">
-        <div class="service-num">03</div>
-        <div class="service-icon" aria-hidden="true">
-          <svg viewBox="0 0 22 22">
-            <circle cx="11" cy="11" r="4" />
-            <path
-              d="M11 4V2M11 20V18M4 11H2M20 11H18M6.34 6.34L4.93 4.93M17.66 17.66L16.24 16.24M6.34 15.66L4.93 17.07M17.66 6.34L16.24 7.76"
-              stroke-linecap="round" />
-          </svg>
-        </div>
-        <h3 class="service-title">Stump Grinding</h3>
-        <p class="service-text">Eliminate tripping hazards and reclaim your lawn instantly. Our powerful grinders mulch
-          stumps well below soil surface for immediate replanting.</p>
-        <a href="#contact" class="service-link">Get a Quote</a>
-      </article>
-
-      <article class="service-card" role="listitem">
-        <div class="service-num">04</div>
-        <div class="service-icon" aria-hidden="true">
-          <svg viewBox="0 0 22 22">
-            <path d="M11 3 Q16 7 15 13 Q11 19 7 15 Q3 11 7 7 Q9 5 11 3Z" stroke-linejoin="round" />
-            <path d="M8 10 Q11 8 14 10" stroke-linecap="round" />
-            <path d="M7 13 Q11 11 15 13" stroke-linecap="round" />
-          </svg>
-        </div>
-        <h3 class="service-title">Storm Response</h3>
-        <p class="service-text">Louisiana weather doesn't wait — neither do we. Our 24/7 emergency crew removes fallen
-          trees and clears hazardous debris fast, minimizing further damage.</p>
-        <a href="#contact" class="service-link">Call Now</a>
-      </article>
-
-      <article class="service-card" role="listitem">
-        <div class="service-num">05</div>
-        <div class="service-icon" aria-hidden="true">
-          <svg viewBox="0 0 22 22">
-            <rect x="3" y="14" width="16" height="5" rx="1" stroke-linejoin="round" />
-            <path d="M6 14V10L11 5L16 10V14" stroke-linejoin="round" />
-            <path d="M9 14V11H13V14" stroke-linejoin="round" />
-          </svg>
-        </div>
-        <h3 class="service-title">Lot &amp; Land Clearing</h3>
-        <p class="service-text">Prepare your site for new construction efficiently. We clear underbrush, trees, and
-          heavy debris with industrial machinery, delivering a perfect blank slate.</p>
-        <a href="#contact" class="service-link">Get a Quote</a>
-      </article>
-
-      <article class="service-card" role="listitem">
-        <div class="service-num">06</div>
-        <div class="service-icon" aria-hidden="true">
-          <svg viewBox="0 0 22 22">
-            <path d="M11 4C8 4 5 7 5 10C5 13 7 15 9 16L11 19L13 16C15 15 17 13 17 10C17 7 14 4 11 4Z"
-              stroke-linejoin="round" />
-            <path d="M11 8V12M9 10H13" stroke-linecap="round" />
-          </svg>
-        </div>
-        <h3 class="service-title">Plant Health Care</h3>
-        <p class="service-text">Proactive disease and pest management from certified arborists. Custom health plans
-          including deep root fertilization to keep your trees strong and resilient.</p>
-        <a href="#contact" class="service-link">Get a Quote</a>
-      </article>
-
-    </div>
+    <div id="services-container" class="services-grid" role="list"></div>
   </section>
 
   <!-- SPOTLIGHTS -->
@@ -317,8 +208,7 @@
     <div class="spotlights-header">
       <span class="section-label" style="color:var(--gold)">Why Walker</span>
       <h2 class="section-title" id="spotlights-heading">Our Commitment to Your Property</h2>
-      <p>Three principles that guide every job we take — from a single pruning visit to a full land clearing project.
-      </p>
+      <p>Three principles that guide every job we take — from a single pruning visit to a full land clearing project.</p>
     </div>
     <div class="spotlights-list">
 
@@ -331,9 +221,7 @@
         <div class="spotlight-content">
           <div class="spotlight-tag">Safety First</div>
           <h3 class="spotlight-title">Precision Removal in Any Space</h3>
-          <p class="spotlight-text">Tree removal requires absolute skill. Our certified arborists use state-of-the-art
-            rigging and crane technology to dismantle even the largest trees in the tightest yards. We carefully lower
-            heavy limbs to protect every inch of your property — your home and landscape stay untouched.</p>
+          <p class="spotlight-text">Tree removal requires absolute skill. Our certified arborists use state-of-the-art rigging and crane technology to dismantle even the largest trees in the tightest yards. We carefully lower heavy limbs to protect every inch of your property — your home and landscape stay untouched.</p>
           <a href="#contact" class="btn-primary" style="align-self:flex-start">Get a Safety Assessment</a>
         </div>
       </div>
@@ -347,9 +235,7 @@
         <div class="spotlight-content">
           <div class="spotlight-tag">Expert Care</div>
           <h3 class="spotlight-title">Healthy Canopies, Lasting Curb Appeal</h3>
-          <p class="spotlight-text">Overgrown canopies lead to disease, weak structure, and storm damage risk. Our
-            trimming services focus on long-term health — removing deadwood and improving air circulation. We artfully
-            shape your oaks and pines to enhance their natural beauty while prolonging their lifespan.</p>
+          <p class="spotlight-text">Overgrown canopies lead to disease, weak structure, and storm damage risk. Our trimming services focus on long-term health — removing deadwood and improving air circulation. We artfully shape your oaks and pines to enhance their natural beauty while prolonging their lifespan.</p>
           <a href="#contact" class="btn-primary" style="align-self:flex-start">Schedule a Trim</a>
         </div>
       </div>
@@ -363,10 +249,7 @@
         <div class="spotlight-content">
           <div class="spotlight-tag">Storm Ready</div>
           <h3 class="spotlight-title">Protect Your Home Before the Next Storm</h3>
-          <p class="spotlight-text">In Houma, it's not <em>if</em> a storm will hit — it's <em>when</em>. Our
-            preventative storm assessment identifies weak branches and compromised root systems threatening your roof or
-            power lines. Addressing hazards early with structural pruning significantly reduces catastrophic damage
-            risk.</p>
+          <p class="spotlight-text">In Houma, it's not <em>if</em> a storm will hit — it's <em>when</em>. Our preventative storm assessment identifies weak branches and compromised root systems threatening your roof or power lines. Addressing hazards early with structural pruning significantly reduces catastrophic damage risk.</p>
           <a href="#contact" class="btn-primary" style="align-self:flex-start">Book an Inspection</a>
         </div>
       </div>
@@ -380,8 +263,7 @@
       <div class="promo-left">
         <div class="promo-eyebrow">Limited Time Offer</div>
         <h2 class="promo-title">Worried About Storm Season?</h2>
-        <p class="promo-sub">Schedule a safety inspection today and get <strong>10% off preventive pruning</strong> to
-          protect your home from falling limbs.</p>
+        <p class="promo-sub">Schedule a safety inspection today and get <strong>10% off preventive pruning</strong> to protect your home from falling limbs.</p>
       </div>
       <a href="#contact" class="btn-dark">Claim Your Discount →</a>
     </div>
@@ -405,22 +287,19 @@
             </svg>
           </div>
           <h3>Safety & Insurance</h3>
-          <p>We carry full liability insurance and worker's compensation on every single job. We never cut corners on
-            safety protocols — your home and our crew remain completely protected throughout.</p>
+          <p>We carry full liability insurance and worker's compensation on every single job. We never cut corners on safety protocols — your home and our crew remain completely protected throughout.</p>
         </div>
         <div class="why-card" role="listitem">
           <div class="why-card-num" aria-hidden="true">02</div>
           <div class="why-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24">
-              <path d="M3 21L6 15L12 9L18 3M9 15L15 9" stroke-linecap="round" stroke-linejoin="round"
-                stroke-width="1.8" />
+              <path d="M3 21L6 15L12 9L18 3M9 15L15 9" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" />
               <circle cx="19" cy="5" r="2" />
               <circle cx="5" cy="19" r="2" />
             </svg>
           </div>
           <h3>Leave No Trace</h3>
-          <p>Our job isn't finished until the last branch is cleared. We rake and blow your yard to remove all debris.
-            Many clients tell us their lawn looks better after we leave than it did before we arrived.</p>
+          <p>Our job isn't finished until the last branch is cleared. We rake and blow your yard to remove all debris. Many clients tell us their lawn looks better after we leave than it did before we arrived.</p>
         </div>
         <div class="why-card" role="listitem">
           <div class="why-card-num" aria-hidden="true">03</div>
@@ -432,8 +311,7 @@
             </svg>
           </div>
           <h3>Premium Equipment</h3>
-          <p>We invest in top-tier machinery — Husqvarna, STIHL, Vermeer, and Bobcat equipment — to handle jobs others
-            can't. Advanced technology means faster, safer work with minimal impact on your lawn.</p>
+          <p>We invest in top-tier machinery — Husqvarna, STIHL, Vermeer, and Bobcat equipment — to handle jobs others can't. Advanced technology means faster, safer work with minimal impact on your lawn.</p>
         </div>
       </div>
     </div>
@@ -451,8 +329,7 @@
           <strong>4.9</strong>
           <div>
             <div class="stars" aria-hidden="true">
-              <span class="star">★</span><span class="star">★</span><span class="star">★</span><span
-                class="star">★</span><span class="star">★</span>
+              <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
             </div>
             <div class="reviews-rating-label">44 Reviews · Google &amp; Facebook</div>
           </div>
@@ -462,13 +339,9 @@
 
         <article class="review-card">
           <div class="review-stars" aria-label="5 stars">
-            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span
-              class="star">★</span><span class="star">★</span>
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
           </div>
-          <p class="review-text">Michel and his crew are the real deal. Had a massive Live Oak branch threatening to
-            come down on my carport after that last storm scare. They came out the same day I called, gave me a fair
-            price, and didn't tear up my yard. Hard to find honest folks these days, but these brothers are good people.
-          </p>
+          <p class="review-text">Michel and his crew are the real deal. Had a massive Live Oak branch threatening to come down on my carport after that last storm scare. They came out the same day I called, gave me a fair price, and didn't tear up my yard. Hard to find honest folks these days, but these brothers are good people.</p>
           <div class="review-author">
             <div class="review-avatar" aria-hidden="true">TG</div>
             <div>
@@ -480,13 +353,9 @@
 
         <article class="review-card">
           <div class="review-stars" aria-label="5 stars">
-            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span
-              class="star">★</span><span class="star">★</span>
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
           </div>
-          <p class="review-text">I hired Walker to remove three pine trees and grind the stumps. I was worried about my
-            flower beds, but Leon assured me they'd be careful. They laid down mats for the machines and cleaned up
-            every single twig before they left. You literally can't tell the trees were ever there. Highly recommend!
-          </p>
+          <p class="review-text">I hired Walker to remove three pine trees and grind the stumps. I was worried about my flower beds, but Leon assured me they'd be careful. They laid down mats for the machines and cleaned up every single twig before they left. You literally can't tell the trees were ever there. Highly recommend!</p>
           <div class="review-author">
             <div class="review-avatar" aria-hidden="true">SL</div>
             <div>
@@ -498,12 +367,9 @@
 
         <article class="review-card">
           <div class="review-stars" aria-label="5 stars">
-            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span
-              class="star">★</span><span class="star">★</span>
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
           </div>
-          <p class="review-text">Best tree service in Houma, hands down. I've used a few other companies that left a
-            mess or charged way more than the quote. Shawn (the foreman) walked me through exactly what they were going
-            to do and stuck to the price. Professional, insured, and fast. Won't call anyone else.</p>
+          <p class="review-text">Best tree service in Houma, hands down. I've used a few other companies that left a mess or charged way more than the quote. Shawn (the foreman) walked me through exactly what they were going to do and stuck to the price. Professional, insured, and fast. Won't call anyone else.</p>
           <div class="review-author">
             <div class="review-avatar" aria-hidden="true">DV</div>
             <div>
@@ -515,12 +381,9 @@
 
         <article class="review-card">
           <div class="review-stars" aria-label="5 stars">
-            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span
-              class="star">★</span><span class="star">★</span>
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
           </div>
-          <p class="review-text">Professionalism is top notch. We needed lot clearing for a new build in Bayou Blue and
-            they knocked it out in two days. The secretary, Sharica, was also super helpful with getting us the
-            insurance paperwork we needed for the bank. Great team from the office to the field.</p>
+          <p class="review-text">Professionalism is top notch. We needed lot clearing for a new build in Bayou Blue and they knocked it out in two days. The secretary, Sharica, was also super helpful with getting us the insurance paperwork we needed for the bank. Great team from the office to the field.</p>
           <div class="review-author">
             <div class="review-avatar" aria-hidden="true">MA</div>
             <div>
@@ -590,9 +453,8 @@
         <div class="faq-sidebar">
           <span class="section-label" style="color:var(--gold)">FAQ</span>
           <h2 class="section-title" id="faq-heading">Got Questions?</h2>
-          <p>We've answered the most common ones below. Still unsure? Give us a call — we're always happy to talk trees.
-          </p>
-          <a href="tel:1234567890" class="btn-primary">(123) 456-7890</a>
+          <p>We've answered the most common ones below. Still unsure? Give us a call — we're always happy to talk trees.</p>
+          <a data-phone-link class="btn-primary" href="tel:1234567890"><span data-phone>(123) 456-7890</span></a>
         </div>
         <div class="faq-list" role="list">
 
@@ -602,9 +464,7 @@
                 <path d="M9 3V15M3 9H15" />
               </svg>
             </summary>
-            <p class="faq-a">Absolutely. We are fully licensed to operate in Louisiana and carry comprehensive liability
-              and worker's compensation insurance. We are happy to provide proof of insurance with every quote so you
-              can have total peace of mind.</p>
+            <p class="faq-a">Absolutely. We are fully licensed to operate in Louisiana and carry comprehensive liability and worker's compensation insurance. We are happy to provide proof of insurance with every quote so you can have total peace of mind.</p>
           </details>
 
           <details>
@@ -613,9 +473,7 @@
                 <path d="M9 3V15M3 9H15" />
               </svg>
             </summary>
-            <p class="faq-a">Yes. Bayou weather is unpredictable. If a storm knocks a tree onto your home, driveway, or
-              power lines, you can call our emergency line day or night. We prioritize hazardous situations to get your
-              family safe and your property secured immediately.</p>
+            <p class="faq-a">Yes. Bayou weather is unpredictable. If a storm knocks a tree onto your home, driveway, or power lines, you can call our emergency line day or night. We prioritize hazardous situations to get your family safe and your property secured immediately.</p>
           </details>
 
           <details>
@@ -624,9 +482,7 @@
                 <path d="M9 3V15M3 9H15" />
               </svg>
             </summary>
-            <p class="faq-a">Stump grinding shreds the stump below soil level — it's faster, more affordable, and leaves
-              you with usable mulch. Stump removal pulls the entire root ball out of the ground. We typically recommend
-              grinding for residential yards as it's far less invasive.</p>
+            <p class="faq-a">Stump grinding shreds the stump below soil level — it's faster, more affordable, and leaves you with usable mulch. Stump removal pulls the entire root ball out of the ground. We typically recommend grinding for residential yards as it's far less invasive.</p>
           </details>
 
           <details>
@@ -635,9 +491,7 @@
                 <path d="M9 3V15M3 9H15" />
               </svg>
             </summary>
-            <p class="faq-a">For most mature trees in Houma, we recommend an inspection and trim every 3–5 years.
-              Fast-growing species or trees near your roofline may need attention every 18–24 months, especially before
-              hurricane season.</p>
+            <p class="faq-a">For most mature trees in Houma, we recommend an inspection and trim every 3–5 years. Fast-growing species or trees near your roofline may need attention every 18–24 months, especially before hurricane season.</p>
           </details>
 
           <details>
@@ -646,9 +500,7 @@
                 <path d="M9 3V15M3 9H15" />
               </svg>
             </summary>
-            <p class="faq-a">We treat your property like it's our own. We use specialized mats to distribute equipment
-              weight and protect your grass from ruts. Our "leave no trace" cleanup policy means we rake, blow, and haul
-              away all debris — your yard will look better when we leave.</p>
+            <p class="faq-a">We treat your property like it's our own. We use specialized mats to distribute equipment weight and protect your grass from ruts. Our "leave no trace" cleanup policy means we rake, blow, and haul away all debris — your yard will look better when we leave.</p>
           </details>
 
           <details>
@@ -657,9 +509,7 @@
                 <path d="M9 3V15M3 9H15" />
               </svg>
             </summary>
-            <p class="faq-a">Not necessarily. As long as we have clear access to the yard (unlocked gates, no loose
-              pets), our crew can complete the job while you're at work. We'll send photos of the completed job and can
-              process payment over the phone for your convenience.</p>
+            <p class="faq-a">Not necessarily. As long as we have clear access to the yard (unlocked gates, no loose pets), our crew can complete the job while you're at work. We'll send photos of the completed job and can process payment over the phone for your convenience.</p>
           </details>
 
           <details>
@@ -668,9 +518,7 @@
                 <path d="M9 3V15M3 9H15" />
               </svg>
             </summary>
-            <p class="faq-a">Yes. We provide detailed photos and itemized invoices to help streamline your claim
-              process. While we can't speak to your adjuster, we give you everything you need to get reimbursed quickly
-              and with minimal hassle.</p>
+            <p class="faq-a">Yes. We provide detailed photos and itemized invoices to help streamline your claim process. While we can't speak to your adjuster, we give you everything you need to get reimbursed quickly and with minimal hassle.</p>
           </details>
 
         </div>
@@ -707,15 +555,12 @@
       <div class="contact-info">
         <span class="section-label">Get in Touch</span>
         <h2 class="section-title" id="contact-heading">Request Your Free Quote</h2>
-        <p>We respond to all inquiries within one business day. For emergencies, call us directly — we're available
-          around the clock.</p>
+        <p>We respond to all inquiries within one business day. For emergencies, call us directly — we're available around the clock.</p>
         <div class="contact-details">
           <div class="contact-row">
             <div class="contact-row-icon" aria-hidden="true">
               <svg viewBox="0 0 16 16" stroke-width="1.4">
-                <path
-                  d="M8 1.5C5.5 1.5 3.5 3.5 3.5 6C3.5 9.5 8 14.5 8 14.5C8 14.5 12.5 9.5 12.5 6C12.5 3.5 10.5 1.5 8 1.5Z"
-                  stroke-linejoin="round" />
+                <path d="M8 1.5C5.5 1.5 3.5 3.5 3.5 6C3.5 9.5 8 14.5 8 14.5C8 14.5 12.5 9.5 12.5 6C12.5 3.5 10.5 1.5 8 1.5Z" stroke-linejoin="round" />
                 <circle cx="8" cy="6" r="1.5" />
               </svg>
             </div>
@@ -727,14 +572,12 @@
           <div class="contact-row">
             <div class="contact-row-icon" aria-hidden="true">
               <svg viewBox="0 0 16 16" stroke-width="1.4">
-                <path
-                  d="M3 3.5C3 3.5 3.5 6 5.5 8C7.5 10 10.5 11 10.5 11L12.5 9L10 7.5L9 8.5C9 8.5 7.5 7.5 7 7C6.5 6.5 5.5 5 5.5 5L6.5 4L5 1.5L3 3.5Z"
-                  stroke-linejoin="round" />
+                <path d="M3 3.5C3 3.5 3.5 6 5.5 8C7.5 10 10.5 11 10.5 11L12.5 9L10 7.5L9 8.5C9 8.5 7.5 7.5 7 7C6.5 6.5 5.5 5 5.5 5L6.5 4L5 1.5L3 3.5Z" stroke-linejoin="round" />
               </svg>
             </div>
             <div>
               <div class="contact-row-label">Phone</div>
-              <div class="contact-row-value">(123) 456-7890</div>
+              <div class="contact-row-value"><a data-phone-link href="tel:1234567890"><span data-phone>(123) 456-7890</span></a></div>
             </div>
           </div>
           <div class="contact-row">
@@ -792,13 +635,10 @@
         </div>
         <div class="form-group">
           <label class="form-label" for="message">Tell Us About Your Project</label>
-          <textarea id="message" class="form-input"
-            placeholder="Describe your trees, property, any concerns…"></textarea>
+          <textarea id="message" class="form-input" placeholder="Describe your trees, property, any concerns…"></textarea>
         </div>
-        <button type="button" class="btn-primary" style="width:100%;justify-content:center">Request My Free Quote
-          →</button>
-        <p class="form-disclaimer">We'll get back to you within one business day. For emergencies, call <strong>(985)
-            555-0128</strong> — available 24/7.</p>
+        <button type="button" class="btn-primary" style="width:100%;justify-content:center">Request My Free Quote →</button>
+        <p class="form-disclaimer">We'll get back to you within one business day. For emergencies, call <strong data-phone>(985) 555-0128</strong></p>
       </div>
     </div>
   </section>
@@ -811,8 +651,7 @@
           <a href="#" class="logo" style="margin-bottom:0.75rem;display:inline-flex">
             <img src="assets/logo/logo.png" alt="logo" class="logo-img" />
           </a>
-          <p>The expert tree care Houma trusts. Removal, trimming, and stumps handled with precision. Fast, safe, and
-            fully insured.</p>
+          <p>The expert tree care Houma trusts. Removal, trimming, and stumps handled with precision. Fast, safe, and fully insured.</p>
           <div class="isa-badge">
             <span>★ ISA Certified Arborists</span>
           </div>
@@ -820,31 +659,28 @@
         <div>
           <div class="footer-col-title">Services</div>
           <ul class="footer-links">
-            <li><a href="#">Tree Removal</a></li>
-            <li><a href="#">Trimming &amp; Pruning</a></li>
-            <li><a href="#">Stump Grinding</a></li>
-            <li><a href="#">Storm Response</a></li>
-            <li><a href="#">Land Clearing</a></li>
-            <li><a href="#">Plant Health Care</a></li>
+            <li><a href="#services">Tree Removal</a></li>
+            <li><a href="#services">Trimming &amp; Pruning</a></li>
+            <li><a href="#services">Stump Grinding</a></li>
+            <li><a href="#services">Storm Response</a></li>
+            <li><a href="#services">Land Clearing</a></li>
+            <li><a href="#services">Plant Health Care</a></li>
           </ul>
         </div>
         <div>
           <div class="footer-col-title">Company</div>
           <ul class="footer-links">
-            <li><a href="#">About Walker</a></li>
-            <li><a href="#">Meet the Team</a></li>
-            <li><a href="#">Our Process</a></li>
-            <li><a href="#">Tree Care Blog</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="#about">About Walker</a></li>
+            <li><a href="#team">Meet the Team</a></li>
+            <li><a href="#contact">Contact Us</a></li>
           </ul>
         </div>
         <div>
           <div class="footer-col-title">Contact</div>
           <ul class="footer-links">
-            <li><a href="tel:1234567890">(123) 456-7890</a></li>
+            <li><a data-phone-link href="tel:1234567890"><span data-phone>(123) 456-7890</span></a></li>
             <li><a href="mailto:email@treeservice.com">email@treeservice.com</a></li>
-            <li><a href="#">4128 Bayou Black Drive, Houma</a></li>
+            <li><a href="#">1804 Bayou Blue Road, Houma</a></li>
             <li><a href="#">Houma, LA 70364</a></li>
             <li style="margin-top:0.75rem"><a href="#">@treeservice</a></li>
             <li><a href="#">Facebook · Instagram · TikTok</a></li>
@@ -852,7 +688,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2026 Tree Service Company. All rights reserved.</p>
+        <p>© 2026 <span data-company-name>Tree Service Company</span>. All rights reserved.</p>
         <div class="footer-legal">
           <a href="#">Privacy Policy</a>
           <a href="#">Terms &amp; Conditions</a>
@@ -863,18 +699,8 @@
     </div>
   </footer>
 
-  <script>
-    document.querySelectorAll('details').forEach(d => {
-      d.addEventListener('toggle', () => {
-        if (d.open) {
-          document.querySelectorAll('details').forEach(other => {
-            if (other !== d) other.removeAttribute('open');
-          });
-        }
-      });
-    });
-  </script>
-
+  <script src="content.js"></script>
+  <script src="script.js" defer></script>
 </body>
 
 </html>
